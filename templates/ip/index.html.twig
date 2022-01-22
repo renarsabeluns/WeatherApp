@@ -9,14 +9,11 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ data}}! ✅</h1>
-    <h1>Hello {{ 'sd' }}! ✅</h1>
+    <h1>Hello {{ dump(WeatherData)}}! ✅</h1>
+    <h1>Hello {{ country_code }}! ✅</h1>
+    <h1>Hello {{ dump(IpData) }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/WeatherApp/src/Controller/IpController.php'|file_link(0) }}">src/Controller/IpController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/WeatherApp/templates/ip/index.html.twig'|file_link(0) }}">templates/ip/index.html.twig</a></code></li>
-    </ul>
+
     
 </div>
 {% endblock %}
